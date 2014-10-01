@@ -1,0 +1,178 @@
+@charset "utf-8";
+
+/***********************************
+		REFERENCES
+font-sizes
+6.854rem
+4.236rem
+2.618rem
+1.618rem
+1rem
+0.618rem
+
+font-families
+Droid Serif, Droid Sans
+
+colors
+#000000
+#222222
+#333333
+#D4D4D4
+#CC3300
+#BADA55
+#FFFFFF
+plus the shadow for the text
+
+
+***********************************/
+
+*{
+	padding:0;
+	margin:0;
+}
+
+/***********************************
+		DEFAULTS
+***********************************/
+body{
+	background-color: #222;
+    font-size: 1rem;      
+}
+h1, h2, h3, h4{
+	font-family: 'Droid Serif', serif;  
+}
+h1{
+	font-size: 6.854rem;
+    color: #FFFFFF;
+}
+h2{
+	font-size: 4.236rem;
+    color:#CC3300;
+    text-shadow: 2px 2px 0px #3f6ba9;
+}
+h3{
+font-size: 2.618rem;
+    color: #CC3300;
+}
+h4{
+ 
+}
+p, li, a{
+	font-family: 'Droid Sans', sans-serif;
+}
+img{
+	width:90%;
+	max-width: 100%;
+	box-sizing: border-box;
+}
+ul{
+	list-style-type: none;
+}
+a:link, a:visited{
+	transition: all 0.8s linear;
+}
+a:hover, a:active, a:focus{
+	text-decoration: none;
+}
+
+/***********************************
+		LAYOUT
+***********************************/
+.wrapper{
+	width:90%;
+	max-width: 1020px;
+	/*min-width: 400px;*/
+	margin:0 auto 2.0rem;
+	background-color: #d4d4d4;
+}
+.header{
+	/*background-color: #000;*/
+    min-height: 400px;
+    background:#000 url(../img/moon-header.jpg) no-repeat;
+    background-position: top, right;
+  
+}
+.main{
+	margin:0 10px 0 10px;
+    
+}
+.footer{
+background-color:#333333;
+    padding: 30px;
+    
+}
+
+/***********************************
+		LINKS 
+-for any that are different than the default
+***********************************/
+
+.footer a:link,
+.footer a:visited{
+	display: block;
+	color: #CC3300;
+}
+.footer a:hover,
+.footer a:active,
+.footer a:focus{
+	font-size: 1.2rem;
+    color: #BADA55;
+}
+
+
+/***********************************
+		CONTENT
+***********************************/
+.header h1{
+    color: #FFFFFF;
+    padding-left: 30px;
+  text-align: right;
+    width:50%;
+    line-height:6.854rem;
+}
+.main h2{
+    color: #CC3300; 
+     padding:0.5rem;      
+}
+.main h3{
+	color:#CC3300;
+    font-size:2.618rem;
+    padding:0.5rem;
+    text-shadow: 1px 1px 0px #3f6ba9;
+    
+}
+.main p{
+  font-size:1rem;
+    padding-right:10px;
+line-height: 1.5rem;
+    padding:10px;
+    
+}
+.main img{
+    border-radius:50%;
+}
+.main-content-img{
+width:200px;
+
+}
+
+.left{
+	float:left;
+	margin-right:10px;
+	margin-bottom: 10px;
+}
+.footer p{
+   margin-left:25px;
+    clear:both;
+        
+}
+.footer url{
+    padding: 0 80px;
+}
+.footer li{
+    /* make these 50% the width of the footer */
+    width:50%; 
+    float: left;
+    line-height:30px;
+    
+}
